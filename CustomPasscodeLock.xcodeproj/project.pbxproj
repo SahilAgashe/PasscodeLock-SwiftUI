@@ -11,6 +11,9 @@
 		814B00062B6E1830007D8408 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B00052B6E1830007D8408 /* ContentView.swift */; };
 		814B00082B6E1831007D8408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814B00072B6E1831007D8408 /* Assets.xcassets */; };
 		814B000B2B6E1831007D8408 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814B000A2B6E1831007D8408 /* Preview Assets.xcassets */; };
+		814B00122B6E1A19007D8408 /* PasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B00112B6E1A19007D8408 /* PasscodeView.swift */; };
+		814B00142B6E1A7C007D8408 /* NumberPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B00132B6E1A7C007D8408 /* NumberPadView.swift */; };
+		814B00162B6E1AB9007D8408 /* PasscodeIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B00152B6E1AB9007D8408 /* PasscodeIndicatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		814B00052B6E1830007D8408 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		814B00072B6E1831007D8408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		814B000A2B6E1831007D8408 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		814B00112B6E1A19007D8408 /* PasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeView.swift; sourceTree = "<group>"; };
+		814B00132B6E1A7C007D8408 /* NumberPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPadView.swift; sourceTree = "<group>"; };
+		814B00152B6E1AB9007D8408 /* PasscodeIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeIndicatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +50,9 @@
 			isa = PBXGroup;
 			children = (
 				814B00032B6E1830007D8408 /* CustomPasscodeLockApp.swift */,
-				814B00052B6E1830007D8408 /* ContentView.swift */,
-				814B00072B6E1831007D8408 /* Assets.xcassets */,
-				814B00092B6E1831007D8408 /* Preview Content */,
+				814B00182B6E7632007D8408 /* Screens */,
+				814B00192B6E7669007D8408 /* Component Views */,
+				814B00172B6E7533007D8408 /* Supporting Files */,
 			);
 			path = CustomPasscodeLock;
 			sourceTree = "<group>";
@@ -57,6 +63,33 @@
 				814B000A2B6E1831007D8408 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		814B00172B6E7533007D8408 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				814B00072B6E1831007D8408 /* Assets.xcassets */,
+				814B00092B6E1831007D8408 /* Preview Content */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		814B00182B6E7632007D8408 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				814B00052B6E1830007D8408 /* ContentView.swift */,
+				814B00112B6E1A19007D8408 /* PasscodeView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		814B00192B6E7669007D8408 /* Component Views */ = {
+			isa = PBXGroup;
+			children = (
+				814B00132B6E1A7C007D8408 /* NumberPadView.swift */,
+				814B00152B6E1AB9007D8408 /* PasscodeIndicatorView.swift */,
+			);
+			path = "Component Views";
 			sourceTree = "<group>";
 		};
 		814BFFF72B6E1830007D8408 = {
@@ -137,8 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				814B00122B6E1A19007D8408 /* PasscodeView.swift in Sources */,
+				814B00162B6E1AB9007D8408 /* PasscodeIndicatorView.swift in Sources */,
 				814B00062B6E1830007D8408 /* ContentView.swift in Sources */,
 				814B00042B6E1830007D8408 /* CustomPasscodeLockApp.swift in Sources */,
+				814B00142B6E1A7C007D8408 /* NumberPadView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +307,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CustomPasscodeLock/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CustomPasscodeLock/Supporting Files/Preview Content\"";
 				DEVELOPMENT_TEAM = 4CJW76Y9FL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -300,7 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CustomPasscodeLock/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CustomPasscodeLock/Supporting Files/Preview Content\"";
 				DEVELOPMENT_TEAM = 4CJW76Y9FL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
