@@ -14,18 +14,19 @@ struct ContentView: View {
     
     // MARK: - body
     var body: some View {
-        VStack {
-            if isAuthenticated {
-                Text("You're in!")
-                
-                Button("Log Out") {
-                    isAuthenticated = false
+        if isAuthenticated {
+            VStack(spacing: 50) {
+                VStack {
+                    Text("You're in!")
+                    Button("Log Out") { isAuthenticated = false }
                 }
-            } else {
-                PasscodeView(isAuthenticated: $isAuthenticated)
+                
+                Text("This application is for learning purpose\n Your password is 1111")
+                    .multilineTextAlignment(.center)
             }
+        } else {
+            PasscodeView(isAuthenticated: $isAuthenticated)
         }
-        .padding()
     }
 }
 

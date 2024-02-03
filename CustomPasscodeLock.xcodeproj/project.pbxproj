@@ -14,6 +14,7 @@
 		814B00122B6E1A19007D8408 /* PasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B00112B6E1A19007D8408 /* PasscodeView.swift */; };
 		814B00142B6E1A7C007D8408 /* NumberPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B00132B6E1A7C007D8408 /* NumberPadView.swift */; };
 		814B00162B6E1AB9007D8408 /* PasscodeIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B00152B6E1AB9007D8408 /* PasscodeIndicatorView.swift */; };
+		814B001B2B6E82B4007D8408 /* InvalidPasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B001A2B6E82B4007D8408 /* InvalidPasscodeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		814B00112B6E1A19007D8408 /* PasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeView.swift; sourceTree = "<group>"; };
 		814B00132B6E1A7C007D8408 /* NumberPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPadView.swift; sourceTree = "<group>"; };
 		814B00152B6E1AB9007D8408 /* PasscodeIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeIndicatorView.swift; sourceTree = "<group>"; };
+		814B001A2B6E82B4007D8408 /* InvalidPasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvalidPasscodeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				814B00132B6E1A7C007D8408 /* NumberPadView.swift */,
 				814B00152B6E1AB9007D8408 /* PasscodeIndicatorView.swift */,
+				814B001A2B6E82B4007D8408 /* InvalidPasscodeView.swift */,
 			);
 			path = "Component Views";
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				814B001B2B6E82B4007D8408 /* InvalidPasscodeView.swift in Sources */,
 				814B00122B6E1A19007D8408 /* PasscodeView.swift in Sources */,
 				814B00162B6E1AB9007D8408 /* PasscodeIndicatorView.swift in Sources */,
 				814B00062B6E1830007D8408 /* ContentView.swift in Sources */,

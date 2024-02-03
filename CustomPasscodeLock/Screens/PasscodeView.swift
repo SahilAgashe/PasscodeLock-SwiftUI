@@ -12,6 +12,7 @@ struct PasscodeView: View {
     // MARK: - Properties
     @State private var passcode = ""
     @Binding var isAuthenticated: Bool
+    @State private var showInvalidPasscodeView = false
     
     // MARK: - body
     var body: some View {
@@ -30,6 +31,15 @@ struct PasscodeView: View {
             // indicator view
             PasscodeIndicatorView(passcode: $passcode)
             
+            if showInvalidPasscodeView {
+                InvalidPasscodeView()
+                    .onAppear(perform: {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                            showInvalidPasscodeView = false
+                        }
+                    })
+            }
+            
             Spacer()
             
             // numberpad
@@ -38,7 +48,11 @@ struct PasscodeView: View {
         .onChange(of: passcode) {
             verifyPasscode()
         }
+        .onAppear(perform: {
+
+        })
     }
+        
     
     // MARK: - Helpers
     private func verifyPasscode() {
@@ -47,11 +61,12 @@ struct PasscodeView: View {
         Task {
             try? await Task.sleep(nanoseconds: 125_000_000)
             isAuthenticated = passcode == "1111"
+            showInvalidPasscodeView = !isAuthenticated
             passcode = ""
         }
     }
 }
 
 #Preview {
-    PasscodeView(isAuthenticated: .constant(false))
+    ContentView()
 }
